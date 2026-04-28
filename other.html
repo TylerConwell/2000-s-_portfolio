@@ -5,8 +5,8 @@
             body {
                 /* background-image: url('./public/Nat_Geo_Wild_lava.gif');
                 background-size: 1500px 580px; */
-
-                /* background-image: url('./public/Water_Happiness.gif');
+/* 
+                background-image: url('./public/Water_Happiness.gif');
                 background-size: 1500px 1000px; */
 
 
@@ -41,7 +41,7 @@
             
             .title {
                 text-align: center;
-                /* color: white; */
+                color: white;
                 font-family:Arial, Helvetica, sans-serif
             }
 
@@ -82,6 +82,52 @@
                 border-radius: 5px;
                 cursor: pointer;
             }
+
+            footer {
+                display: flex;
+                justify-content: right;
+                margin: 20px;
+            }
+
+            /* .scroll_container {
+                width: 100%;
+                overflow: hidden;
+                white-space: nowrap;
+                box-sizing: border-box;
+            }
+
+            .scroll_text {
+                display: inline-block;
+                padding-left: 100%;
+                animation: scroll 10s linear infinite;
+            }
+
+            @keyframes scroll {
+                0% {
+                    transform: translateX(0);
+                }
+                100% {
+                    transform: translateX(-100%);
+                }
+            } */
+
+            .typing {
+                white-space: nowrap;
+                overflow: hidden;
+                width: 0;
+                animation: typing 4s steps(40, end) forwards,
+                           blink 0.75s step-end infinite;
+            }
+
+            @keyframes typing {
+                from { width: 0; }
+                to { width: 99%; }
+            }
+
+            @keyframes blink {
+                50% { border-color: transparent; }
+            }   
+
         </style>
     </head>
 
@@ -94,27 +140,41 @@
 
         <h1 class="about">About Me</h1>
 
-        <p class="anolog">
+        <!-- <div class="scroll_container">
+            <p class="anolog & scroll_text">
+                <span style="font-weight: bold">Tyler</span> 
+                :   Hey, I'm Tyler I like web design and though websites have been getting a bit...boring lately.
+            </p>
+        </div> -->
+
+        <p class="anolog typing">
             <span style="font-weight: bold">Tyler</span> 
             :   Hey, I'm Tyler I like web design and though websites have been getting a bit...boring lately.
         </p>
+
+       
 
         <p class="anolog">
             <span style="font-weight: bold">Anonymous</span>
 
             <span>
-                :   Let's see what you got cooking up then. &nbsp; &nbsp;
-                <button class="send_button">send message</button>
+                :   Let's see what you got cooking up then.
             </span>
         </p>
 
-        <p class="anolog">
+        <!-- <p class="anolog">
             <span style="font-weight: bold">Tyler</span>
             :   Wait, wait before you send submit. Let me show you what I have so far.
-        </p>
+        </p> -->
+
 
         
     </body>
 
+    <footer>
+        <!-- <button class="send_button">send message</button> -->
+
+        <button onclick="window.location.href='page.html';">send message</button>
+    </footer>
 
 </html>
