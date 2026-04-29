@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .energy_star {
+                /* width: 200px;
+                height: auto;
+                margin-left: 900px; */
+                
+
+
+                width: 150px;
+                height: auto;
+            }
+
+            body {
+                background-color: black;
+            }
+
+            .footer_text {
+                color:white;
+            }
+
+            .container {
+                /* align-items: center; */
+                border: 2px solid black;
+
+                display: flex;
+                align-items: flex-start;
+                gap: 20px;
+            }
+
+            /* img, p {
+                display: inline-block;
+                vertical-align: middle;
+            } */
+
+            .boot_text {
+                color: white;
+                font-size: large;
+                margin: 0;
+                flex: 1;
+            }
+
+
+            .typing {
+                color:white;
+                white-space: nowrap;
+                overflow: hidden;
+                width: 0;
+                animation: typing 4s steps(40, end) forwards,
+                           blink 0.75s step-end infinite;
+            }
+
+            @keyframes typing {
+                from { width: 0; }
+                to { width: 99%; }
+            }
+
+            @keyframes blink {
+                50% { border-color: transparent; }
+            }   
+
+        </style>
+    </head>
+
+    <header>
+
+    </header>
+
+    <body>
+
+        <div class="container">
+            <p class="boot_text, typing">
+                Award Modular BIOS v4.50PG, An Energy Star Ally<br>
+                Copyright (C) 1984-88, 1994-2000 Award Software, Inc.<br>
+                ASUS P5a ACPI BIOS Revision 1011 Beta 005<br>
+                80486DX2 CPU at 66MHz<br>
+                Memory Test : 8192K OK<br>
+                Award Plug and Play BIOS Extention v1.0A<br>
+                COpyright (c) 1998-2000 Award Software, Inc.<br>
+                <br>
+                <br>
+                <br>
+                <br>
+                Press DEL to enter SETUP<br>
+                02/21/97-VT49G-2A4L6F0I-00<br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                Press Enter to boot<br>
+            </p>
+            
+            <img class="energy_star" src="./public/energy_star.png" alt="energy star">
+            
+        </div>
+
+
+     
+
+
+    </body>
+
+    <footer>
+        <p class="footer_text">Copyright © 2000 My Y2K Portfolio. All rights reserved.</p>
+
+    </footer>
+</html>
