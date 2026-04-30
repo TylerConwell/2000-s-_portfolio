@@ -8,20 +8,6 @@
                 font-family: 'Comic Sans MS', cursive, sans-serif;
             }
 
-            table {
-                border: 3px solid rgba(0, 136, 255, 0.5);
-                padding: 10px;
-                width: 90%;
-                margin: auto;
-                background-color: rgba(0, 255, 174, 0.5);
-            }
-
-            th, td {
-                border: 3px solid rgba(0, 136, 255, 0.5);
-                padding: 20px;
-                font-size: 25px;
-            }
-
             .title {
                 font-family: 'Comic Sans MS', cursive, sans-serif;
                 color: #ff00ff;
@@ -33,6 +19,19 @@
             .blue-title {
                 color: #0000ff;
                 text-shadow: 1px 1px #00ffff;
+            }
+
+            table {
+                border: 3px solid rgba(0, 136, 255, 0.5);
+                padding: 10px;
+                width: 90%;
+                margin: auto;
+                background-color: rgba(0, 255, 174, 0.5);
+            }
+
+            th, td {
+                border: 3px solid rgba(0, 136, 255, 0.5);
+                font-size: 20px;
             }
 
             .bar {
@@ -80,18 +79,35 @@
                 border: 2px solid rgba(255, 0, 76, 0.5);
                 padding: 20px;
                 margin-left: 60px;
+                font-size: 20px;
             }
 
             .img_2 {
                 margin: 20px;
                 /* padding: 20px; */
             }
+
+            .img_3 {
+                margin: 20px;
+                /* padding: 20px; */
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .project_table {
+                overflow-wrap: break-word;
+                white-space: normal;
+                padding: 5px;
+
+                margin: auto;
+            }
         </style>
     </head>
 
     <header>
-        <h1 class="title">My Y2K Portfolio</h1>
-        <button onclick="window.location.href='startup_screen.html';">Update to new web version!</button>
+        <h1 class="title">Tyler's Portfolio</h1>
+        <button onclick="window.location.href='page.html';">Update To New Web Version!</button>
         <!-- make a shuffle button that will switch the html pages like a fun idea of on he makes good pages -->
     </header>
 
@@ -100,34 +116,53 @@
             <tr>
                 <th><span class="blue-title">Projects</span></th>
                 <th><span class="blue-title">Hobbies</span></th>
-                <th><span class="blue-title">About</span></th>
+                <th><span class="blue-title">About Me</span></th>
                 <th><span class="blue-title">Contact</span></th>
             </tr>
 
             <tr>
-                <td>My y2k protfolio</td>
-                <td>games, coding, exploring, plants</td>
-                <td>Just a dude on the internet</td>
-                <td>example@email.com (cant take my identity :])</td>
+                <td>
+                    My y2k protfolio,
+                    <br>
+                    Futurama newspaper,
+                    <br>
+                    Hacked skull's ascii art,
+                    <br>
+                    Cold Ones art Gallery,
+                    <br>
+                    Bioshock Ecommerce site,
+                    <br>
+                    Star Wars fan page
+                    <br> <br>
+                    *More info about them below
+                </td>
+                <td>Games, 
+                    <br>
+                    Coding, 
+                    <br>
+                    Exploring,
+                    <br>
+                    Plants,
+                    <br>
+                    Graphic Design
+                </td>
+                <td>I like Front End Development, 
+                    <br>
+                    Arg's, Watches, Movies, Outdoors,
+                    <br>
+                    Frutiger Aero aesthetic and Guinness
+                </td>
+                <td>example@email.com</td>
             </tr>
         </table>
-
-        <!-- <img src="./public/Skeleton_Trumpet.gif" alt="Skeleton Trumpet"> -->
 
         <div>
             <img class="img_1" src="./public/aero_sticker_small.gif" alt="aero sticker">
 
-            <p class="color_palette">just like the cool colors man</p>
+            <p class="color_palette">If you like pretty colors also I have a few more below</p>
         </div>
    
-        <img class="img_2" src="./public/vintage_pillar_aero.gif" alt="vintage pillar aero">
-
-        <!-- <h1 class="bar_1">
-            add some kinda gif thats cool
-        </h1> -->
-
-        <!-- <img src="./public/Skeleton Dance GIF by aurel.gif" alt="Skeleton Dance"> -->
-          
+        <img class="img_2" src="./public/vintage_pillar_aero.gif" alt="vintage pillar aero">        
 
         <table>
             <tr>
@@ -141,22 +176,101 @@
                 <td>A simple portfolio website designed to look like it was made in the early 2000s.</td>
                 <td>HTML, CSS</td>
             </tr>
+
+            <tr>
+                <td>Futurama Newspaper</td>
+                <td>A fan page dedicated to the animated TV show Futurama, featuring news stories and tic tac toe </td>
+                <td>HTML, CSS, JavaScript XML, React</td>
+            </tr>
+
+            <tr>
+                <td>Hacked Skull's Ascii Art</td>
+                <td>A collection of ascii art pieces that look like an old school terminal window</td>
+                <td>HTML, CSS, JavaScript XML, React</td>
+            </tr>
+
+            <tr>
+                <td>Cold Ones Art Gallery</td>
+                <td>A gallery of art pieces inspired by the popular YouTube channel Cold Ones</td>
+                <td>HTML, CSS, JavaScript XML, React</td>
+            </tr>
+
+            <tr>
+                <td>Bioshock Ecommerce Site</td>
+                <td>A mock ecommerce site faux selling plasmid and vigor's from the Bioshock video game series</td>
+                <td>HTML, CSS, JavaScript XML, React</td>
+            </tr>
+
+            <tr>
+                <td>Star Wars Fan Page</td>
+                <td>A fan page dedicated to the Star Wars franchise, featuring light saber combat styles and the franchise's history</td>
+                <td>HTML, CSS, JavaScript XML, React</td>
+            </tr>
         </table>
 
-        <h1 class="bar">add some little hud</h1>
+        <button onclick="window.location.href='projects.html';">See More On Projects Here</button>
+
+
+        <img class="img_1" src="./public/windows_95.gif" alt="windows_95 gif">      
+        
+        <img class="img_2" src="./public/wave_vaper.gif" alt="wave gif">
+
+
+
+
+        <h1 class="bar">A bit more about me</h1>
 
         <table>
             <tr>
-                <th><span class="blue-title">Hobbies</span></th>
-                <th><span class="blue-title">Why am I so intresting</span></th>
-                <th><span class="blue-title">But really who am I</span></th>
+                <th><span class="blue-title">What makes me so special</span></th>
             </tr>
 
             <tr>
-                <td>you know like the stuff i listed on top and also i like the internet</td>
-                <td>im just a chill guy, i like to pet animals and explore</td>
-                <td>im just really into being me and liking old memes man</td>
+                <td>
+                    I have years of experience in front-end development. 
+                    <br>
+                    Some of my most used applications are HTML, CSS, JavaScript, React, Vite, Figma, 
+                    <br>
+                    WordPress, Canva, and Adobe Photoshop.
+                </td>
             </tr>
         </table>
+
+
+
+
+        <h1>Lets break down some goals</h1>
+
+        <p>
+            The big goals I wanted to accomplish with this site are: 
+            <br>
+            making a full functional website, making an e-commerce site for my bead making hobby,
+            <br>
+            and branching out to make more websites for the communities that I enjoy being a part of.
+        </p>
+
+
+
+        <h1>What I learned from what I like making</h1>
+        <div class="newpaper">
+            <p>
+                I enjoy the process of creating mockups for websites the most,
+                <br>
+                from the development of the website in Figma and Canva to making 
+                <br>
+                the frontend in Vite as well as the frontend framework in React.
+            </p>
+
+            <img class="img_3" src="./public/figma_futurama.png" alt="futurama_figma">
+        </div>
+
+        <p>
+            I learned to save…save…save. For all of my projects, I created a repository and ensured
+            <br>
+            to stay on top of all of the features for the websites that I am developing. 
+            <br>Thankfully, in my junior career, I have not had to deal with losing any of my work,
+            <br>
+            and it doesn’t matter how many branches and commits there are; I make sure to save, stage, and commit each time.
+        </p>
     </body>
 </html>
